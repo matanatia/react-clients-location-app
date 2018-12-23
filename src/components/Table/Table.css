@@ -1,0 +1,34 @@
+.container {
+    width: 75%;
+    height: 400px; 
+    margin: 10% auto;
+  
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+  
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+  
+th {
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding-left: 5px;
+    width: 20%;
+}
+
+.mapSection {
+    width: 40%;
+}
+
+th h3 {
+    margin: 0;
+}
+
+.selected {
+    background: rgb(41, 41, 247);
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,17 @@
+ul {
+    overflow-y: scroll;
+    height: 23rem;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: rgb(41, 41, 247);
+  }
+
+li {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+}
