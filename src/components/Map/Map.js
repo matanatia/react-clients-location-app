@@ -64,10 +64,13 @@ class Map extends Component {
         });
     }
 
-    render() {
-        
-        this.loadMap();
+    componentDidUpdate() {
+      //console.log("update");
+      this.loadMap();
+    }
 
+    render() {
+      
         return (
         <main>
             <div id="map"></div>
