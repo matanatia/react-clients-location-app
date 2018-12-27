@@ -4,11 +4,20 @@ import "./Map.css";
 
 class Map extends Component {
 
-    loadMap = () => {
-        //if map dosnt work replace spi key in the url
-        //if want in heb insert to thr url "&language=heb&" insted "&language=en&" 
-        loadScript ("https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DrDBUd6GNL2EIBCxK-K0OjkTny8kbuA&language=en&callback=initMap");
-        window.initMap = this.initMap;
+    constructor() {
+      super();
+      //if map dosnt work replace spi key in the url
+      //if want in heb insert to thr url "&language=heb&" insted "&language=en&"
+      loadScript ("https://maps.googleapis.com/maps/api/js?key=AIzaSyD1DrDBUd6GNL2EIBCxK-K0OjkTny8kbuA&language=en&callback=initMap");
+      //init the map for the first time with the default props
+      window.initMap = this.initMap;
+    }
+
+    loadMap() { 
+        //if the script in the constarctor has loaded init the map
+        if (window.google){
+          this.initMap();
+        }
     }
 
     initMap = () => {
