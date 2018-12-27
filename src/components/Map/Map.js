@@ -65,7 +65,7 @@ class Map extends Component {
     }
 
     componentDidUpdate() {
-      //console.log("update");
+      //load map when the props - lan, lat and add is updated
       this.loadMap();
     }
 
